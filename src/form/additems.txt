@@ -1,0 +1,52 @@
+
+
+
+
+1. Added State to Store Products Locally in Products.jsx:
+I updated the component to maintain and update the product list dynamically using the setValidData function.
+
+2. Handle Form Submission to Update Product List:
+Inside the onSubmit function of the form (addProductForm.jsx), I ensured that successful form submissions push new product objects into the validData list.
+
+3. Unique Key Handling:
+Ensured that each product in the list has a unique identifier by assigning a timestamp (Date.now()) when creating the new product.
+
+-------------------------------------------------------------------------
+Code Changes Summary:
+
+In AddProductForm.jsx
+
+Added this callback mechanism for updating product data:
+
+
+const AddProductForm = ({ onProductAdded }) => {
+  ...
+  onSubmit={async (values, { resetForm }) => {
+    const newProduct = {
+      id: Date.now(), // Unique ID for the product
+      title: values.title,
+      price: Number(values.price),
+      description: values.description,
+      image: values.image,
+      category: values.category,
+    };
+    await mutation.mutateAsync(newProduct);
+    onProductAdded(newProduct);  // Notify parent component
+    resetForm();
+  }}
+  ...
+};
+
+-------------------------------------------------------------------------
+In Products.jsx
+Handled the callback for form submission as shown below:
+
+
+const handleProductAdded = (newProduct) => {
+  setValidData((prevData) => [...prevData, newProduct]);
+};
+...
+<AddProductForm onProductAdded={handleProductAdded} />
+
+------------------------------------------------------------------------
+These changes make the form submission seamless, updating the UI without needing a page refresh. Let me know if you need further refinements.
