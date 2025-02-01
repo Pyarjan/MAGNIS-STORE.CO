@@ -74,7 +74,7 @@ const Products = () => {
         </Modal>
       ) : null}
 
-      <h1 className=" bg-[url('/public/images/artwork.png')]  text-accent  px-[6rem] bg-no-repeat bg-cover">
+      <h1 className=" bg-[url('./images/artwork.png')]  text-accent  px-[6rem] bg-no-repeat bg-cover">
         <div className="flex flex-col items-center justify-center h-[25rem]">
           <div className=" flex justify-center items-center">
             <NavLink to={"/"} className={"hover:text-primary text-gray-300"}>
@@ -134,7 +134,7 @@ const Products = () => {
           ))}
         </div>
       </div>
-      <ScrollToTopButton/>
+      <ScrollToTopButton />
       <Footer />
     </>
   );

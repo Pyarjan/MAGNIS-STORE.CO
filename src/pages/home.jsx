@@ -5,9 +5,10 @@ import Topcollection from "../components/topcollections";
 
 const Home = () => {
   const slides = [
-    "/public/images/img_01.jpg",
-    "/public/images/img_02.jpg",
-    "/public/images/img_03.jpg",
+    "./images/img01.jpg",
+    "./images/img02.jpg",
+    "./images/img03.jpg",
+    "./images/img04.jpg",
   ];
 
   return (

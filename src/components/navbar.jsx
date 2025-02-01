@@ -57,7 +57,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-5">
           <img
-            src="/public/logos/logo02.png"
+            src="./logos/logo01.png"
             alt="magnis-logo"
             className="h-12 p-2"
           />
@@ -76,7 +76,7 @@ const Navbar = () => {
             className={"flex items-center gap-2 hover:text-primary relative"}
           >
             <img
-              src="/public/images/HOT-02.png"
+              src="./images/hot02.png"
               alt="img"
               className="absolute h-5 mt-[-2rem] ml-5 "
             />
@@ -149,7 +149,7 @@ const Navbar = () => {
             >
               <span>Sales </span>
               <img
-                src="/public/images/HOT-03.png"
+                src="./images/hot01.png"
                 alt="img"
                 className="h-5 absolute mt-0.5 ml-10"
               />

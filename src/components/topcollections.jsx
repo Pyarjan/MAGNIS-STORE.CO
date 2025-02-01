@@ -29,37 +29,37 @@ const Topcollection = () => {
     {
       id: 1,
       title: "Crop-Tops",
-      image: "/public/images/crop tops.jpg",
+      image: "./images/crop tops.jpg",
       items: 24,
     },
     {
       id: 2,
       title: "T-shirts",
-      image: "/public/images/T-shirts.jpg",
+      image: "./images/T-shirts.jpg",
       items: 18,
     },
     {
       id: 3,
       title: "Blazers",
-      image: "/public/images/Blazers.jpg",
+      image: "./images/Blazers.jpg",
       items: 36,
     },
     {
       id: 4,
       title: "Coats",
-      image: "/public/images/coat.jpg",
+      image: "./images/coat.jpg",
       items: 22,
     },
     {
       id: 5,
       title: "Sweaters",
-      image: "/public/images/Sweater.jpg",
+      image: "./images/Sweater.jpg",
       items: 30,
     },
     {
       id: 6,
       title: "Hoodies",
-      image: "/public/images/Hoodies.jpg",
+      image: "./images/Hoodies.jpg",
       items: 28,
     },
   ];
